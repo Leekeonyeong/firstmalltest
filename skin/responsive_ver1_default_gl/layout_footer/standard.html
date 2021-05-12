@@ -4,56 +4,38 @@
 		<div class="resp_wrap">
 			<ul class="menu1">
 				<li class="foot_menu_d1 cs">
-					<h4 class="title"><a href="/service/cs" designElement="text">CS CENTER</a></h4>
-					<ul class="list v4">
-						<li class="compay_phone">
-							<a href="tel:{config_basic.companyPhone}"><img src="../images/common/icon_call_02.png" class="img_call" alt="" />{config_basic.companyPhone}</a>
-						</li>
-						<li><span designElement="text">open : am 10:00 ~ pm 06:00 / Sat, Sun, Holiday OFF</span></li>
-						<li class="Pt2"><a href="mailto:{config_basic.companyEmail}">{config_basic.companyEmail}</a></li>
-					</ul>
+					<h4 class="title">CS CENTER</h4>
+					<p class="section_left_big">
+						<img
+						src="/data/skin/responsive_ver1_default_gl/images/common/icon_call_02.png"
+						class="img_call"
+						alt=""
+						/>
+						031-814-4170
+					</p>
+					<p class="section_left_small cs">
+						open : am 10:00 ~ pm 06:00<br />Sat, Sun, Holiday OFF<br />					
+						<a href="mailto:wow72@naver.com"> wow72@naver.com </a>
+					</p>
 				</li>
 				<li class="foot_menu_d2 bank">
-					<h4 class="title"><span designElement="text">BANK INFO</span></h4>
-					<ul class="list v3 gray_03">
-						<!--{@bank_loop}-->
-						<li>
-							<p>{.bank} {.account}</p>
-							<p><span class="gray_06" designElement="text">예금주 :</span> {.bankUser}</p>
-						</li>
-						<!--{/}-->
-					</ul>
+						<h4 class="title">BANK INFO</h4>
+						<p class="section_left_big">110-181-129588</p>
+						<p
+						  class="section_left_small"
+						  style="display: flex; align-items: flex-end; margin-bottom:10px;"
+						>
+						  <img src="../images/icon/shinhan_icon.png" class="img_call" alt="" />
+						  <span style="margin-left: 10px; line-height:18px;">예금주 : 이성환</span>
+						</p>
 				</li>
-				<li class="foot_menu_d3 guide">
-					<h4 class="title"><span designElement="text">SHOP MENU</span></h4>
-					<ul class="list v2 clearbox">
-						<li>
-							<a href="/mypage/index"><img src="../images/common/menu_guide_03.png" alt="" /></a>
-							<p class="desc" designElement="text">MYPAGE</p>
-						</li>
-						<li>
-							<a href="/order/cart"><img src="../images/common/menu_guide_04.png" alt="" /></a>
-							<p class="desc" designElement="text">CART</p>
-						</li>
-						<li>
-							<a href="/service/cs"><img src="../images/common/menu_guide_01.png" alt="" /></a>
-							<p class="desc" designElement="text">CS CENTER</p>
-						</li>
-						<li>
-							<a href="/promotion/event"><img src="../images/common/menu_guide_02.png" alt="" /></a>
-							<p class="desc" designElement="text">EVENT</p>
-						</li>
-					</ul>
-				</li>
-				<li class="foot_menu_d4 delivery">
-					<h4 class="title"><span designElement="text">DELIVERY INFO</span></h4>
-					<ul class="list v5">
-						<li><span designElement="text">반품주소 :</span> ({refund_address.address_zipcode}){? refund_address.address_type == "street"}{refund_address.address_street}{:}{refund_address.address}{/} {refund_address.address_detail}</li>
-						<li style="text-indent:0; padding-left:0;">
-							<span designElement="text">배송조회 : ○○○택배 1588-0000</span>
-							<a href="#" target="_blank" title="새창" class="btn_resp size_a" designElement="text" alt="택배사 배송추적 주소를 입력하세요.">배송추적</a>
-						</li>
-					</ul>
+				<li class="foot_menu_d3 escrow1">
+						<h4 class="title">에스크로 영역</h4>
+						<p
+						  class="section_left_small"
+						>
+						 에스크로 등록시 여기에 노출될 예정입니다.
+						</p>
 				</li>
 			</ul>
 		</div>

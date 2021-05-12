@@ -1,3 +1,67 @@
+<!--  공지사항  최근글 start -->
+<style type="text/css">
+  .designLastestNew609b8b109b89e .tit {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .designLastestNew609b8b109b89e .normal_bbslist .cat {
+    font-size: 12px;
+    font-family: gothic, gulim;
+    color: #888;
+    letter-spacing: -1px;
+  }
+  .designLastestNew609b8b109b89e .normal_bbslist .sbj {
+    text-align: left;
+    letter-spacing: 0px;
+  }
+  .designLastestNew609b8b109b89e .normal_bbslist .sbj a {
+    font-size: 12px;
+    font-family: gothic, gulim;
+    color: #222222;
+    text-decoration: none;
+    line-height: 150%;
+  }
+  .designLastestNew609b8b109b89e .normal_bbslist .sbj a:hover {
+    text-decoration: underline;
+  }
+  .designLastestNew609b8b109b89e .normal_bbslist .comment {
+    font: normal 11px arial;
+    color: #fc6138;
+  }
+</style>
+<!--  공지사항  최근글 end -->
+<!--  공지사항  최근글 start -->
+<style type="text/css">
+  .designLastestNew609b88a9775fa .tit {
+    font-size: 12px;
+    font-weight: bold;
+  }
+  .designLastestNew609b88a9775fa .normal_bbslist .cat {
+    font-size: 12px;
+    font-family: gothic, gulim;
+    color: #888;
+    letter-spacing: -1px;
+  }
+  .designLastestNew609b88a9775fa .normal_bbslist .sbj {
+    text-align: left;
+    letter-spacing: 0px;
+  }
+  .designLastestNew609b88a9775fa .normal_bbslist .sbj a {
+    font-size: 12px;
+    font-family: gothic, gulim;
+    color: #222222;
+    text-decoration: none;
+    line-height: 150%;
+  }
+  .designLastestNew609b88a9775fa .normal_bbslist .sbj a:hover {
+    text-decoration: underline;
+  }
+  .designLastestNew609b88a9775fa .normal_bbslist .comment {
+    font: normal 11px arial;
+    color: #fc6138;
+  }
+</style>
+<!--  공지사항  최근글 end -->
 <!-- ++++++++++++++++++++++++++++++++++++++++++++++++++++
 @@ index @@
 - 파일위치 : [스킨폴더]/main/index.html
@@ -28,12 +92,66 @@
       </li>
       <!--{ / }-->
     </ul>
+    <div class="section_left">
+      <h4>CS CENTER</h4>
+      <p class="section_left_big">
+        <img
+          src="/data/skin/responsive_ver1_default_gl/images/common/icon_call_02.png"
+          class="img_call"
+          alt=""
+        />
+        031-814-4170
+      </p>
+      <p class="section_left_small">
+        open : am 10:00 ~ pm 06:00<br />Sat, Sun, Holiday OFF
+      </p>
+      <p class="section_left_small">
+        <a href="mailto:wow72@naver.com"> wow72@naver.com </a>
+      </p>
+    </div>
+    <div class="kakao_left">
+      <img src="../images/icon/kakao_icon.png" alt="" />
+      <p>
+        카톡 주문 <a href="#"> 바로가기 </a> <br />
+        카톡 상담 <a href="#"> 바로가기 </a>
+      </p>
+    </div>
+    <div class="section_left">
+      <h4>BANK INFO</h4>
+      <p
+        class="section_left_small"
+        style="display: flex; align-items: flex-end"
+      >
+        <img src="../images/icon/shinhan_icon.png" class="img_call" alt="" />
+        <span style="margin-left: 20px">예금주 : 이성환</span>
+      </p>
+      <p class="section_left_big">110-181-129588</p>
+    </div>
   </div>
   <div class="right_side">
     <!-- 슬라이드 배너 영역 (light_style_2_1) :: START -->
     <div class="sliderB wide_visual_slider">{=showDesignBanner(1)}</div>
     <div class="right_cs">
-      <div class="newsNotice">뉴스&공지 영역</div>
+      <div class="right_notice_pc">
+        <p class="right_notice_title">
+          <span class="title"> 공지사항 </span>
+          <a href="/board/?id=notice">
+            <i class="fas fa-plus"></i>
+          </a>
+        </p>
+        <div class="right_notice_list">
+          <!--{@ getBoardData('notice','5',null,null,'80','200','ID','HID','IMG',array('orderby=gid asc','','rdate_s=2018-08-17','rdate_f=2021-05-12','none_auto_term=999','image_w=80','image_h=80')) }-->
+          <ul>
+            <li>
+              <!--{? .goodsInfo }--><a href="{.wigetboardurl_view}" target=""
+                >{.goodsInfo.goods_name} </a
+              ><br /><!--{/}-->
+              {.subject} {.iconnew} {.iconhot} {.iconfile} {.iconhidden}
+            </li>
+            <!--{/}-->
+          </ul>
+        </div>
+      </div>
       <div class="csNum">대표전화</div>
       <div class="delivery">택배서비스</div>
     </div>
@@ -52,6 +170,18 @@
       });
     </script>
     <!-- 슬라이드 배너 영역 (light_style_2_1) :: END -->
+    <ul class="category_right">
+      <!--{ @ category }-->
+      <li class="category_right_depth1">
+        <a
+          class="categoryDepthLink"
+          href="/goods/catalog?code={.category_code}"
+        >
+          ▶ <em style="font-size: 1.5em; margin-left: 5px">{.name}</em>
+        </a>
+      </li>
+      <!--{ / }-->
+    </ul>
     <div class="section_2">
       <h4>CONSTRUCTION SUPPLIES</h4>
     </div>
