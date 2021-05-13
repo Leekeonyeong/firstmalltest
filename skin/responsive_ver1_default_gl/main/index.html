@@ -148,12 +148,48 @@
               ><br /><!--{/}-->
               {.subject} {.iconnew} {.iconhot} {.iconfile} {.iconhidden}
             </li>
-            <!--{/}-->
           </ul>
+          <!--{/}-->
         </div>
       </div>
-      <div class="csNum">대표전화</div>
-      <div class="delivery">택배서비스</div>
+      <div class="right_notice_mobile">
+        <p class="right_notice_title">
+          <span class="title"> 공지사항 </span>
+        </p>
+        <div class="right_notice_list">
+          <!--{@ getBoardData('notice','1',null,null,'80','200','ID','HID','IMG',array('orderby=gid asc','','rdate_s=2018-08-17','rdate_f=2021-05-12','none_auto_term=999','image_w=80','image_h=80')) }-->
+          <p>
+            <!--{? .goodsInfo }--><a href="{.wigetboardurl_view}" target=""
+              >{.goodsInfo.goods_name} </a
+            ><br /><!--{/}-->
+            {.subject} {.iconnew} {.iconhot} {.iconfile} {.iconhidden}
+          </p>
+          <!--{/}-->
+        </div>
+        <p class="right_notice_link">
+          <a href="/board/?id=notice">
+            <i class="fas fa-plus"></i>
+          </a>
+        </p>
+      </div>
+      <div class="right_section_2">
+        <div class="csNum">
+          <p class="csTop">
+            <span>대표전화</span> <strong>031-814-4170</strong>
+          </p>
+          <p class="csBottom">
+            <span class="green">최고의 품질!</span>
+            <span class="orange">최저 가격!</span>
+          </p>
+        </div>
+        <div class="right_delivery">
+          <div class="left_txt">
+            <p class="delivery_top">SPECIAL SERVICE</p>
+            <p class="delivery_mid">전국 당일 택배/화물 서비스</p>
+            <p class="delivery_bot">페브릭 등 색상주문 품목 외</p>
+          </div>
+        </div>
+      </div>
     </div>
     <div class="hiddenClear"></div>
     <script type="text/javascript">
@@ -184,14 +220,51 @@
     </ul>
     <div class="section_2">
       <h4>CONSTRUCTION SUPPLIES</h4>
+      <div class="section_line"></div>
+      <ul class="section_2_cate">
+        <li>
+          <a href="#">
+            <img src="../images/icon/cate0001.png" alt="" />
+            <span>폴리보드</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icon/cate0002.png" alt="" />
+            <span>스펀지</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icon/cate0003.png" alt="" />
+            <span>아트보드</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icon/cate0004.png" alt="" />
+            <span>패브릭 보드</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icon/cate0005.png" alt="" />
+            <span>충진재</span>
+          </a>
+        </li>
+        <li>
+          <a href="#">
+            <img src="../images/icon/cate0006.png" alt="" />
+            <span>철밴드</span>
+          </a>
+        </li>
+      </ul>
     </div>
 
     <!-- BEST PRODUCTS -->
     <div class="title_group1">
-      <h3 class="title1"><span designElement="text">BEST</span></h3>
-      <p class="text2" designElement="text">
-        퍼스트몰 반응형 스킨에 오신것을 환영합니다.
-      </p>
+      <h3 class="title1"><span designElement="text">Product List</span></h3>
+      <div class="section_line"></div>
     </div>
     <div
       data-effect="scale opacity"

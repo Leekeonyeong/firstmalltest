@@ -380,31 +380,6 @@
       <a href="/order/cart" class="resp_top_cart"
         ><span class="cart_cnt2">{push_count_cart}</span></a
       >
-
-      <!-- 슬라이드 배너 영역 (light_style_1_2) :: START -->
-      <div
-        class="gnb_bnr_slide gnb_bnr_slide_02 slider_before_loading"
-        style="
-          position: absolute;
-          right: 40px;
-          top: 0px;
-          width: 220px;
-          height: 148px;
-        "
-      >
-        <div class="slider_gon">{=showDesignBanner(2)}</div>
-      </div>
-      <script type="text/javascript">
-        $(function () {
-          $(".light_style_1_2").slick({
-            autoplay: true,
-            vertical: true,
-            speed: 400,
-            autoplaySpeed: 6000,
-          });
-        });
-      </script>
-      <!-- 슬라이드 배너 영역 (light_style_1_2) :: END -->
     </div>
   </div>
   <!-- //로고 영역 -->
@@ -450,30 +425,6 @@
             <!-- 참고) 브랜드: showBrandLightNavigation(), 지역: showLocationLightNavigation() -->
             {=showCategoryLightNavigation()}
             <!-- //카테고리 네비게이션 -->
-            <li class="custom_nav_link">
-              <a
-                class="categoryDepthLink"
-                designElement="text"
-                href="/goods/new_arrivals"
-                ><em>NEW</em></a
-              >
-            </li>
-            <li class="custom_nav_link">
-              <a
-                class="categoryDepthLink"
-                designElement="text"
-                href="/goods/best"
-                ><em>BEST</em></a
-              >
-            </li>
-            <li class="custom_nav_link">
-              <a
-                class="categoryDepthLink"
-                designElement="text"
-                href="/goods/brand_main"
-                ><em>BRANDS</em></a
-              >
-            </li>
             <li class="custom_nav_link">
               <a
                 class="categoryDepthLink"
