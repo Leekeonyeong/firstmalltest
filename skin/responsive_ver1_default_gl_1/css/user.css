@@ -1,0 +1,11 @@
+@charset "utf-8";
+/* **************************************************************************************
+* 반응형 스킨 사용자/제작자 CSS
+************************************************************************************** */
+
+.wide_visual_slider.sliderB .slick-active .simg {
+  transform: scale(1);
+}
+.wide_visual_slider.sliderB .text_wrap {
+  background: none;
+}
